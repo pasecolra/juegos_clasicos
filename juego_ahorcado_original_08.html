@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>CANVAS Ahorcado</title>
+		<title>JUEGO DEL AHORCADO</title>
 		<style>
 			body{
 				width:960px;
@@ -131,7 +131,7 @@
 			}
 			function cadalso(errores){
 				var imagen = new Image();
-				imagen.src = "imagenes/ahorcado/ahorcado"+errores+".png";
+				imagen.src = "imagenes1/ahorcado/ahorcado"+errores+".png";
 				imagen.onload = function(){
 					ctx.drawImage(imagen,390,20,180,180);	
 				}
@@ -216,7 +216,7 @@
 	</head>
 
 	<body>
-		<h1>Ahorcado CANVAS</h1>
+		<h1>JUEGO DEL AHORCADO</h1>
 		<canvas id="miCanvas" width="960px" height="450px">
 			Tu navegador no soporta CANVAS
 		</canvas>
