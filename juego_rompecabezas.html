@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CANVAS</title>
+<title>ROMPECABEZAS</title>
 <style>
 body{
 	width:960px;
@@ -13,7 +13,7 @@ h1{
 }
 #miCanvas{
 	border:dotted 2px yellow;
-	background:green;	
+	background:orangered;	
 }
 </style>
 <script>
@@ -29,7 +29,7 @@ var numFichas = renglones * columnas - 1;
 var ancho = 100;
 var b = 0;
 var fichas_array = new Array();
-var colorFicha = "white";
+var colorFicha = "orange";
 var colorMarco = "black";
 /****************
 OBJETOS
@@ -181,7 +181,7 @@ window.onload = function(){
 </head>
 
 <body>
-<h1>CANVAS</h1>
+<h1>ROMPECABEZAS</h1>
 <canvas id="miCanvas" width="960px" height="500px">
 Tu navegador no soporta CANVAS
 </canvas>
