@@ -13,7 +13,7 @@ h1{
 }
 #miCanvas{
 	border:dotted 2px black;
-	background:#cccccc;	
+	background:green;	
 }
 </style>
 <script>
@@ -40,9 +40,9 @@ var BOMBA 				= 9;					//Cuadro con la mina
 var OK 					= 14;					//Cuadro con OK, mina encontrada
 //
 var celdas_array = new Array();					//Vector con los datos de las celdas
-var colorTecla = "blue";
+var colorTecla = "#65db4b";
 var colorMargen = "black";
-var colorVoltea = "cyan";
+var colorVoltea = "#a1ff81";
 var banderaMarca;				//Bandera para marcar minas
 /*******************************************************************************
 FUNCIONES
@@ -106,7 +106,7 @@ function volteaCelda(){
 	ctx.fillRect(this.x, this.y, this.w, this.h);
 	ctx.strokeRect(this.x, this.y, this.w, this.h);
 	//
-	ctx.fillStyle = "black";
+	ctx.fillStyle = "yellow";
 	ctx.font = "bold 20px Courier";
 	if(this.minas==BOMBA){
 		ctx.fillText("*", this.x+this.w/2-5, this.y+this.h/2+5);
